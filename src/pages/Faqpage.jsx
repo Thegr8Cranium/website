@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer";
 import FAQAccordion from "../components/FAQAccordion/FAQAccordion";
 import CryptoTicker from "../components/CryptoTicker/CryptoTicker";
 
-const Faq = () => {
+const Faqpage = () => {
   return (
     <>
       <Header />
@@ -17,4 +17,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default Faqpage;
