@@ -26,17 +26,17 @@ const Footer = () => {
         <div className="footerSection">
           <div className="footerSectionOne">
             <h2>Get in Touch</h2>
-            <a href="">Telegram Channel</a>
+            <a href="/">Telegram Channel</a>
             <a href="mailto:hello@cryptoinvestmentww.com">
               hello@cryptoinvestmentww.com
             </a>
-            <a href=""> 195 Freeman Street, Grimsby, England, DN32 7AS</a>
+            <a href="/"> 195 Freeman Street, Grimsby, England, DN32 7AS</a>
           </div>
           <div className="footerSectionTwo">
             <h2>Quick Links</h2>
             <a href="/">Home</a>
             <a href="/About">About Us</a>
-            <a href="/Faq">FAQ</a>
+            <a href="/Faqpage">FAQ</a>
           </div>
           <div className="footerSectionThree">
             <h2>Help Desk</h2>
