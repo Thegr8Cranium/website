@@ -1,0 +1,135 @@
+.affiliatePage {
+    color: aliceblue;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /*Allows wrapping for smaller screens*/
+    margin-top: 50px;
+  }
+  
+  .affiliatePage h3 {
+    text-transform: uppercase;
+    color: #5d8aa8;
+    margin-top: 10px;
+  }
+
+  .affiliatePage h5 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .affiliatePage h6 {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: grey;
+  }
+
+  .affiliatePage h6:hover {
+    color: black;
+  }
+  
+  .affiliateBox {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+  }
+  
+  .affiliateHead {
+    width: 50%;
+  }
+  
+  .affiliateOne,
+  .affiliateTwo {
+    border: 1px solid #5d8aa8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .affiliateHead h3 {
+    font-size: 22px;
+  }
+  
+  .affiliateHead h2 {
+    text-transform: uppercase;
+    color: #5d8aa8;
+    margin-bottom: 0;
+    font-size: 38px;
+  }
+  
+  .affiliateTwo:hover,
+  .affiliateOne:hover {
+    background: linear-gradient(180deg, #5d8aa8, #cdd6dc, #abb8c1);
+    box-shadow: 0 0 10px #5d8aa8;
+    color: black;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For tablets and smaller screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .affiliatePage {
+      padding: 30px 50px; /* Reduce padding */
+      flex-direction: column; /* Stack content vertically */
+    }
+  
+    .affiliateBox,
+    .affiliateHead {
+      width: 100%; /* Full width for elements */
+    }
+  
+    .affiliateOne,
+    .affiliateTwo {
+      width: 100%; /* Full width for cards */
+      margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+  
+    .affiliateHead h2 {
+      font-size: 32px; /* Reduce heading size */
+    }
+  
+    .affiliateHead h3 {
+      font-size: 18px;
+    }
+  
+    .affiliateHead h6 {
+      font-size: 18px;
+    }
+  }
+  
+  /* For mobile screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .affiliatePage {
+      padding: 20px; /* Further reduce padding for small screens */
+    }
+  
+    .affiliateHead h2 {
+      font-size: 28px; /* Further reduce heading size */
+    }
+  
+    .affiliateHead h3 {
+      font-size: 16px;
+    }
+  
+    .affiliateHead h6 {
+      font-size: 16px;
+    }
+  
+    .affiliateOne h6,
+    .affiliateTwo h6 {
+      font-size: 14px; /* Smaller font for subheadings */
+    }
+  
+    .affiliateOne h5,
+    .affiliateTwo h5 {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,118 @@
+.crypto-ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+.ticker-wrapper {
+  display: flex;
+  animation: scroll 50s linear infinite;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.crypto-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.crypto-name {
+  font-weight: bold;
+  margin-right: 8px;
+  color: #fff;
+}
+
+.crypto-price {
+  color: green; /* Green for positive price */
+  font-weight: bold;
+}
+
+/* Animation for scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .ticker-wrapper {
+    animation: scroll 40s linear infinite; /* Speed up the scroll for smaller screens */
+  }
+
+  .crypto-name {
+    font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .crypto-price {
+    font-size: 0.9rem;
+  }
+
+  .ticker-item {
+    margin-right: 20px; /* Reduce spacing */
+  }
+
+  .crypto-icon {
+    width: 20px;
+    height: 20px; /* Reduce icon size */
+  }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .ticker-wrapper {
+    animation: scroll 30s linear infinite; /* Faster scrolling */
+  }
+
+  .crypto-name {
+    font-size: 0.8rem; /* Further reduce font size */
+  }
+
+  .crypto-price {
+    font-size: 0.8rem;
+  }
+
+  .ticker-item {
+    margin-right: 15px; /* Narrow spacing between items */
+  }
+
+  .crypto-icon {
+    width: 18px;
+    height: 18px; /* Smaller icon size */
+  }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .ticker-wrapper {
+    animation: scroll 20s linear infinite; /* Even faster scrolling for smaller screens */
+  }
+
+  .crypto-name {
+    font-size: 0.7rem; /* Small font for names */
+  }
+
+  .crypto-price {
+    font-size: 0.7rem;
+  }
+
+  .ticker-item {
+    margin-right: 10px; /* Tight spacing */
+  }
+
+  .crypto-icon {
+    width: 16px;
+    height: 16px; /* Compact icon size */
+  }
+}

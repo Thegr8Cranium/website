@@ -1,0 +1,140 @@
+/* Main Page */
+.sogreatPage {
+    color: aliceblue;
+    padding: 50px 100px;
+}
+
+/* Flex container for reasons section */
+.reasons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;  /* Allow wrapping for smaller screens */
+}
+
+/* Section for the "so great" title and text */
+.sogreat {
+    text-align: center;
+}
+
+/* Title Styling */
+.sogreat h2 {
+    color: #5d8aa8;
+    font-size: 40px;
+    line-height: 20%;
+}
+
+/* Paragraph Styling */
+.sogreat p {
+    color: grey;
+    font-size: 20px;
+}
+
+/* Reason Image Section */
+.reasonImg {
+    width: 50%;
+}
+
+.reasonImg img {
+    width: 100%;
+}
+
+/* Text Section for reasons */
+.reasonsText {
+    width: 50%;
+}
+
+/* Reason Text Styling */
+.reasonOne p,
+.reasonTwo p {
+    line-height: 150%;
+    color: grey;
+    font-size: 18px;
+  
+}
+
+/* Reason Headings */
+.reasonOne h3,
+.reasonTwo h3 {
+    font-size: 25px;
+}
+
+.reasonOne img,
+.reasonTwo img {
+    max-width: 30px;
+}
+
+/* Responsive Styles */
+
+/* For Tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .sogreatPage {
+        padding: 30px 50px; /* Reduce padding */
+    }
+
+    .sogreat h2 {
+        font-size: 32px; /* Slightly smaller title */
+    }
+
+    .sogreat p {
+        font-size: 18px; /* Adjust paragraph font size */
+    }
+
+    .reasons {
+        flex-direction: column; /* Stack reasons vertically */
+        justify-content: center; /* Center the content */
+    }
+
+    .reasonImg,
+    .reasonsText {
+        width: 100%; /* Make images and text 100% width on tablets */
+        margin-bottom: 30px; /* Add some spacing between the two sections */
+    }
+
+    .reasonOne p,
+    .reasonTwo p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+
+    .reasonOne h3,
+    .reasonTwo h3 {
+        font-size: 22px; /* Adjust heading size */
+    }
+}
+
+/* For Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .sogreatPage {
+        padding: 20px 30px; /* Smaller padding for mobile */
+    }
+
+    .sogreat h2 {
+        font-size: 26px; /* Reduce title size on mobile */
+    }
+
+    .sogreat p {
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+
+    .reasons {
+        flex-direction: column; /* Stack reasons vertically */
+        justify-content: center; /* Center the content */
+        padding: 0; /* Remove padding */
+    }
+
+    .reasonImg,
+    .reasonsText {
+        width: 100%; /* Make the image and text full width on mobile */
+        margin-bottom: 20px; /* Add margin between image and text */
+    }
+
+    .reasonOne p,
+    .reasonTwo p {
+        font-size: 14px; /* Smaller text for mobile */
+    }
+
+    .reasonOne h3,
+    .reasonTwo h3 {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
+}

@@ -1,0 +1,55 @@
+.faqHead {
+    color: #5d8aa8;
+    font-size: 2rem; /* Default size for large screens */
+    text-align: center; /* Center-align the heading for better presentation */
+  }
+  
+  .faqPage {
+    width: 90%;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    color: grey;
+    margin-top: 50px;
+    max-width: 1200px; /* Limit the maximum width for larger screens */
+  }
+  
+  /* Responsive Styles */
+  
+  /* For tablets and smaller laptops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .faqHead {
+      font-size: 1.8rem; /* Slightly smaller font size */
+    }
+  
+    .faqPage {
+      width: 95%; /* Increase width to fit smaller screens */
+      margin-top: 40px; /* Reduce top margin */
+    }
+  }
+  
+  /* For tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    .faqHead {
+      font-size: 1.5rem; /* Further reduce font size */
+    }
+  
+    .faqPage {
+      width: 100%; /* Full width for tablets */
+      margin-top: 30px;
+    }
+  }
+  
+  /* For mobile phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    .faqHead {
+      font-size: 1.2rem; /* Compact font size for smaller screens */
+      line-height: 1.4; /* Adjust line height for readability */
+    }
+  
+    .faqPage {
+      width: 100%; /* Full width for mobile phones */
+      margin-top: 20px; /* Minimal top margin */
+      padding: 0 10px; /* Add padding for better alignment on small screens */
+    }
+  }
+  

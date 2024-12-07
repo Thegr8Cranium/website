@@ -1,0 +1,103 @@
+/* /* Main login page styles */
+.loginPage {
+    color: grey;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto; 
+}
+
+/* .loginForm {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+   
+} */
+
+.loginForm label {
+    display: block;
+    text-align: left;
+}
+
+.loginForm input[type="text"], 
+.loginForm input[type="password"] {
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block;
+    width: 70%;
+}
+
+.loginForm button {
+    display: block;
+    width: 77%;
+    padding: 10px 15px;
+    margin-top: 30px;
+    border: 1px solid #5d8aa8;
+    border-radius: 10px;
+    background-color: #17181f;
+    color: #5d8aa8;
+}
+
+.loginForm button:hover {
+    background-color: #5d8aa8;
+    color: #17181f;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .loginForm {
+        width: 80vw; /* Adjust form width for tablets */
+    }
+
+    .loginForm input[type="text"], 
+    .loginForm input[type="password"] {
+        width: 90%; /* Increase input width for better mobile form experience */
+    }
+
+    .loginForm button {
+        width: 90%; /* Button width adjusted for tablet screen */
+    }
+}
+
+/* For smaller tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .loginForm {
+        width: 90vw; /* Form width adjusted for smaller tablets */
+        padding: 0 20px; /* Add some padding for small devices */
+    }
+
+    .loginForm input[type="text"], 
+    .loginForm input[type="password"] {
+        width: 100%; /* Inputs should take full width on smaller screens */
+    }
+
+    .loginForm button {
+        width: 100%; /* Button width should be full width */
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .loginForm {
+        width: 95vw; /* Use most of the screen width for mobile */
+        padding: 0 15px; /* Minimal padding for mobile devices */
+    }
+
+    .loginForm input[type="text"], 
+    .loginForm input[type="password"] {
+        width: 100%; /* Inputs span the full screen width */
+        padding: 12px; /* Slightly larger padding for mobile usability */
+    }
+
+    .loginForm button {
+        width: 100%; /* Full-width button for mobile */
+        padding: 12px; /* Larger button padding for better tap area */
+    }
+}

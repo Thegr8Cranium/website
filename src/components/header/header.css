@@ -3,37 +3,130 @@
     padding: 6px 50px;
     justify-content: space-between;
     background: #17181f;
-}
-
-a {
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-}
-
-.menu {
+    font-size: 18px;
+  }
+  
+  .menu {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-}
-
-.signup button {
+  }
+  
+  .menu a:hover {
+    color: #5d8aa8;
+  }
+  
+  .signup button {
     padding: 10px 25px;
-    border: 2px solid #05a0a0;
+    border: 2px solid #5d8aa8;
+    /* border-radius: 5px; */
     background: #17181f;
-    background: linear-gradient(45deg, #17181f 15%, #05a0a0 65%) !important;;
-    color: #fff;
-    font-size: 13px;
-    font-weight: 400;
-}
-.signup {
+    color: #17181f;
+    font-size: 10px;
+    /* font-weight: 600; */
+  }
+
+  .signup button a {
+    font-size: 14px;
+  }
+
+  .signup button img {
+    max-width: 20px;
+  }
+  .signup button:hover {
+    background: linear-gradient(45deg, #17181f 15%, #5d8aa8 65%) !important;
+  }
+  .signup {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.logo h3 {
+    /* font-weight: 600; */
+  }
+  
+  .logo h3 {
     font-size: 15px;
     color: #fff;
-
-}
+  }
+  
+  /* Responsive Styles */
+  
+  /* For tablets and smaller laptops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .navbar {
+      padding: 6px 30px; /* Reduced padding */
+    }
+  
+    .menu {
+      gap: 20px; /* Reduced gap between menu items */
+    }
+  
+    .logo h3 {
+      font-size: 14px; /* Smaller font size for logo */
+    }
+  
+    .signup button {
+      padding: 8px 20px; /* Adjusted button size */
+      font-size: 14px; /* Smaller font size */
+    }
+  }
+  
+  /* For tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack elements vertically */
+      padding: 6px 20px; /* Further reduced padding */
+      text-align: center; /* Center-align text */
+    }
+  
+    .menu {
+      flex-direction: column; /* Stack menu items vertically */
+      gap: 10px; /* Reduce gap between items */
+    }
+  
+    .menu a {
+      font-size: 16px; /* Smaller font size for menu items */
+    }
+  
+    .signup button {
+      padding: 8px 20px; /* Adjusted button size */
+      font-size: 14px; /* Smaller font size */
+    }
+  
+    .logo h3 {
+      font-size: 14px; /* Smaller font size for logo */
+    }
+  }
+  
+  /* For mobile phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    .navbar {
+      padding: 6px 10px; /* Minimal padding */
+    }
+  
+    .menu {
+      gap: 8px; /* Even smaller gap */
+    }
+  
+    .menu a {
+      font-size: 14px; /* Further reduce font size */
+    }
+  
+    .signup button {
+      padding: 8px 18px; /* Adjusted button size for smaller screens */
+      font-size: 12px; /* Smaller font size */
+    }
+  
+    .logo h3 {
+      font-size: 12px; /* Compact font size for logo */
+    }
+  }
+  

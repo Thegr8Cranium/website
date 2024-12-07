@@ -1,0 +1,152 @@
+.footerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Adjust for better alignment on smaller screens */
+    color: aliceblue;
+    gap: 30px;
+    padding: 0 50px;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
+
+  .footerImages {
+    padding: 0 50px;
+  }
+  .footerImages img {
+    max-width: 120px;
+    margin: 100px 5px 10px 5px;
+  }
+
+  .footer {
+    background: black;
+    padding: 20px;
+  }
+  .footerSection a {
+    display: block;
+    color: grey;
+    margin: 15px 0;
+  }
+  
+  .footerSectionOne,
+  .footerSectionTwo,
+  .footerSectionThree {
+    width: 20%; /* Default width for large screens */
+  }
+  .arr {
+    color: grey;
+  }
+  .footerName {
+    color: #5d8aa8;
+  }
+
+  .footerReserve {
+    text-align: right;
+    padding-right: 100px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .terms {
+    color: #5d8aa8;
+    padding: 0 50px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+
+  .footerSectionOne h2,
+  .footerSectionTwo h2,
+  .footerSectionThree h2 {
+    font-size: 30px;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For tablets and smaller laptops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .footerSection {
+      padding: 0 50px; /* Reduce padding */
+      gap: 20px; /* Decrease gap between sections */
+    }
+   
+    .footerSectionOne,
+    .footerSectionTwo,
+    .footerSectionThree {
+      width: 30%; /* Allow more space for each section */
+    }
+  
+    .footerSection h2 {
+      font-size: 26px; /* Slightly reduce heading size */
+    }
+  
+    .reserved,
+    .terms {
+      padding: 0 50px; /* Reduce side padding */
+      text-align: center; /* Center-align for consistency */
+    }
+  }
+  
+  /* For tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    .footerSection {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center; /* Center-align content */
+      gap: 30px; /* Maintain spacing between sections */
+      padding: 0 20px; /* Reduce padding further */
+    }
+    .footerImages img {
+      max-width: 75px;
+      margin: 100px 5px 10px 5px;
+    }
+  
+    .footerSectionOne,
+    .footerSectionTwo,
+    .footerSectionThree {
+      width: 100%; /* Full width for each section */
+      text-align: center; /* Center-align content */
+    }
+  
+    .footerSection h2 {
+      font-size: 24px; /* Further reduce heading size */
+    }
+  
+    .reserved,
+    .terms {
+      padding: 0; /* Remove extra padding */
+      margin-top: 20px; /* Add spacing between sections */
+      text-align: center;
+    }
+  }
+  
+  /* For mobile phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    .footerSection {
+      gap: 20px; /* Smaller gap for compact screens */
+      padding: 0 10px; /* Minimal padding */
+    }
+
+    .footerImages img {
+      max-width: 50px;
+      margin: 100px 5px 10px 5px;
+    }
+  
+    .footerSection h2 {
+      font-size: 20px; /* Compact font size for headings */
+    }
+  
+    .footerSectionOne,
+    .footerSectionTwo,
+    .footerSectionThree {
+      width: 100%; /* Full-width for each section */
+      text-align: center; /* Center-align content */
+    }
+  
+    .reserved,
+    .terms {
+      font-size: 0.9rem; /* Smaller font for reserved/terms */
+      margin-top: 10px; /* Minimal spacing */
+      text-align: center; /* Center-align for mobile */
+    }
+  }
+  

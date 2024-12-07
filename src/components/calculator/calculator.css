@@ -1,0 +1,99 @@
+.calculatorPage {
+    color: aliceblue;
+    padding: 50px 100px;
+  }
+  
+  .calculatorHead {
+    color: aliceblue;
+  }
+  
+  .calculator {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  #selectPlan,
+  #amount {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0 10px;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 4em;
+    color: aliceblue;
+  }
+  
+  select:hover {
+    color: black;
+  }
+  
+  .calculator div {
+    width: 50%;
+  }
+  
+  /* Responsive Styles */
+  
+  /* For tablets and smaller laptops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .calculatorPage {
+      padding: 40px 50px; /* Reduce padding for smaller screens */
+    }
+  
+    .calculator {
+      gap: 20px; /* Increase gap between elements */
+    }
+  
+    .calculator div {
+      width: 100%; /* Stack elements vertically */
+    }
+  
+    #selectPlan,
+    #amount {
+      height: 3.5em; /* Slightly reduce input height */
+    }
+  }
+  
+  /* For tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    .calculatorPage {
+      padding: 30px 20px; /* Further reduce padding */
+    }
+  
+    .calculator {
+      flex-direction: column; /* Stack all elements vertically */
+      gap: 15px;
+    }
+  
+    #selectPlan,
+    #amount {
+      height: 3em; /* Reduce input height for smaller screens */
+    }
+  }
+  
+  /* For mobile phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    .calculatorPage {
+      padding: 20px; /* Minimal padding for mobile screens */
+    }
+  
+    .calculatorHead {
+      font-size: 16px; /* Reduce font size for headers */
+    }
+  
+    .calculator {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #selectPlan,
+    #amount {
+      height: 2.8em; /* Compact height for inputs */
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .calculator div {
+      width: 100%; /* Ensure inputs take full width */
+    }
+  }
+  

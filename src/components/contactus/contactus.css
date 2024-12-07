@@ -1,0 +1,151 @@
+input[type="submit"] {
+  display: block;
+  width: 20%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  border: 1px solid #5d8aa8;
+  background-color: #17181f;
+  color: #5d8aa8;
+  min-width: 100px;
+}
+
+input[type="submit"]:hover {
+ background-color: #5d8aa8; 
+ color: aliceblue;
+}
+
+.contactPage {
+  color: grey;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap; /* Corrected flex-direction to flex-wrap for proper wrapping */
+  margin: 20px;
+  gap: 40px;
+}
+
+.contactStyle {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  background-color: #17181f;
+  border: 1px solid #5d8aa8;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.formSettings {
+  width: 40vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.contactForm {
+  display: flex;
+  flex-wrap: wrap; /* Ensures the form elements wrap on smaller screens */
+}
+
+.container {
+  border: 1px solid #5d8aa8;
+  box-shadow: 0 0 10px #5d8aa8;
+  padding: 0 100px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+.contactHead {
+  text-align: left;
+}
+
+.contactHead h2 {
+  color: aliceblue;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.contactMail a {
+  color: #5d8aa8;
+}
+
+.contactMail {
+  font-weight: 700;
+}
+
+/* Responsive Styles */
+
+/* For large tablets and small laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 50px; /* Reduce padding for smaller screens */
+  }
+
+  .formSettings {
+    width: 60vw; /* Adjust form width */
+  }
+
+  input[type="submit"] {
+    width: 30%; /* Increase button width */
+  }
+
+  .contactHead h2 {
+    font-size: 1.8rem; /* Slightly reduce font size */
+  }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px; /* Further reduce padding */
+  }
+
+  .contactForm {
+    flex-direction: column; /* Stack form elements vertically */
+  }
+
+  .formSettings {
+    width: 80%; /* Narrower form on smaller screens */
+  }
+
+  input[type="submit"] {
+    width: 40%; /* Adjust button width */
+  }
+
+  .contactHead h2 {
+    font-size: 1.6rem; /* Further reduce font size */
+  }
+
+  .contactMail {
+    font-size: 0.9rem; /* Adjust font size for contact mail */
+  }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Minimal padding */
+  }
+
+  .formSettings {
+    width: 90%; /* Full width for mobile */
+  }
+
+  input[type="submit"] {
+    width: 60%; /* Larger button width for touch accessibility */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .contactHead h2 {
+    font-size: 1.4rem; /* Compact heading size */
+  }
+
+  .contactMail {
+    font-size: 0.8rem;
+  }
+}

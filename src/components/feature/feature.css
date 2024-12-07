@@ -1,0 +1,118 @@
+ .featurePage h2 {
+    text-align: center;
+    color: #5d8aa8;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .arrow2 {
+    width: 20px;
+  }
+  .featureList {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    color: aliceblue;
+    gap: 10px;
+    /* flex-wrap: wrap; Enable wrapping on smaller screens */
+  }
+
+  .featureList h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .featureOne,
+  .featureTwo,
+  .featureThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #5d8aa8;
+    box-shadow: 0 0 10px #5d8aa8;
+    padding: 10px; /* Adjust padding for consistent spacing */
+    transition: transform 0.6s ease;
+    width: 30%; /* Default width for large screens */
+    min-width: 200px; /* Ensure a minimum width for smaller screens */
+  }
+.featureList p {
+  color: grey;
+  font-size: 20px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+  .featureOne:hover,
+  .featureTwo:hover,
+  .featureThree:hover {
+    background: linear-gradient(180deg, #5d8aa8, #cdd6dc, #abb8c1);
+    color: black !important;
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Styles */
+  
+  /* For large tablets and smaller laptops (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    .featurePage h2 {
+      font-size: 28px; /* Slightly smaller font size */
+    }
+  
+    .featureList {
+        flex-wrap: wrap;
+      padding: 0 50px; /* Reduce padding */
+    }
+  
+    .featureOne,
+    .featureTwo,
+    .featureThree {
+      width: 45%; /* Adjust to two items per row */
+      padding: 15px; /* Slightly reduce padding */
+    }
+  }
+  
+  /* For tablets (max-width: 768px) */
+  @media (max-width: 768px) {
+    .featurePage h2 {
+      font-size: 24px; /* Further reduce font size */
+    }
+  
+    .featureList {
+        flex-wrap: wrap;
+      padding: 0 20px; /* Further reduce padding */
+      gap: 20px; /* Increase gap between items */
+    }
+  
+    .featureOne,
+    .featureTwo,
+    .featureThree {
+      width: 100%; /* Single column layout */
+      padding: 15px; /* Consistent padding */
+    }
+  }
+  
+  /* For mobile phones (max-width: 480px) */
+  @media (max-width: 480px) {
+    .featurePage h2 {
+      font-size: 20px; /* Compact heading font size */
+    }
+  
+    .featureList {
+        flex-wrap: wrap;
+      padding: 0 10px; /* Minimal padding */
+    }
+  
+    .featureOne,
+    .featureTwo,
+    .featureThree {
+      width: 100%; /* Full width for each item */
+      padding: 10px; /* Compact padding */
+    }
+  
+    .featureOne:hover,
+    .featureTwo:hover,
+    .featureThree:hover {
+      transform: none; /* Disable hover transform for better UX on touch devices */
+    }
+  }
+  

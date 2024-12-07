@@ -1,0 +1,178 @@
+/* Main container for the plan section */
+.planContainer {
+    background-color: #5d8aa8;
+    color: aliceblue;
+    text-align: center;
+    margin: 0 80px;
+    border-radius: 15px 0;
+    padding: 5px;
+    margin-top: 100px;
+}
+
+/* Plan list layout (for larger screens) */
+.planList {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 78px;
+    color: aliceblue;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.planOne,
+.planTwo,
+.planThree {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #131419;
+    padding: 30px;
+    width: 26%;
+    margin: 0;
+}
+
+.planOne h3,
+.planTwo h3,
+.planThree h3 {
+    color: #5d8aa8;
+    font-size: 32px;
+    margin: 0;
+}
+
+.percent {
+    font-weight: 800;
+    font-size: 25px;
+    margin: 0;
+}
+
+.planOne p,
+.planTwo p,
+.planThree p {
+    margin: 10px;
+}
+
+.planList button {
+    background: none;
+    color: #5d8aa8;
+    border: 1px solid #5d8aa8;
+    border-radius: 40px;
+    padding: 20px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.planList button:hover {
+    background: #5d8aa8;
+    color: black;
+}
+
+.planHead {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    gap: 30px;
+}
+
+.planHeadOne {
+    text-align: left;
+    padding: 20px 0;
+}
+
+.planHeadTwo {
+    text-align: left;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.planHeadOne span {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 70%;
+    padding: 0;
+    margin: 0;
+}
+
+.planHeadOne h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+/* Responsive Styles */
+
+/* For tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .planList {
+        padding: 0 30px; /* Reduce padding for smaller screens */
+        gap: 20px; /* Reduce gap between items */
+    }
+
+    .planOne,
+    .planTwo,
+    .planThree {
+        width: 48%; /* Increase width slightly to make better use of available space */
+    }
+
+    .planHeadOne h2,
+    .planHeadTwo {
+        font-size: 22px; /* Adjust font size for headers */
+    }
+}
+
+/* For smaller tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .planList {
+        padding: 0 20px; /* Further reduce padding for smaller devices */
+        gap: 15px; /* Tighten the gap between plan items */
+    }
+
+    .planOne,
+    .planTwo,
+    .planThree {
+        width: 100%; /* Make plan items take full width for smaller screens */
+        margin-bottom: 20px; /* Add space between each plan on smaller screens */
+    }
+
+    .planHeadOne h2,
+    .planHeadTwo {
+        font-size: 18px; /* Reduce font size for smaller devices */
+    }
+
+    .percent {
+        font-size: 20px; /* Reduce the size of percentages for better fit */
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .planList {
+        padding: 0 10px; /* Minimal padding for mobile screens */
+        gap: 10px; /* Small gap between items */
+    }
+
+    .planOne,
+    .planTwo,
+    .planThree {
+        width: 100%; /* Full width for plan items */
+        padding: 20px; /* Reduced padding for smaller devices */
+        margin-bottom: 15px; /* Add space between each plan */
+    }
+
+    .planHeadOne h2,
+    .planHeadTwo {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    .planHeadOne span {
+        font-size: 40px; /* Smaller span for mobile screens */
+    }
+
+    .percent {
+        font-size: 18px; /* Smaller font size for mobile */
+    }
+
+    .planList button {
+        width: 100%; /* Full width button for mobile */
+        padding: 15px; /* Adjust padding for button */
+    }
+}

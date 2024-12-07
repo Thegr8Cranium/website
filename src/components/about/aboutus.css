@@ -1,0 +1,53 @@
+.aboutPage {
+    color: grey;
+    padding: 0 50px;
+    margin-top: 50px;
+  }
+  
+  .link {
+    color: #5d8aa8;
+  }
+  
+  .aboutHead span {
+    color: #5d8aa8;
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .aboutHead {
+    font-size: 22px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .aboutPage {
+      padding: 0 20px; /* Reduce padding for smaller screens */
+      margin-top: 30px; /* Adjust margin for compact view */
+    }
+  
+    .aboutHead span {
+      font-size: 36px; /* Scale down the font size */
+    }
+  
+    .aboutHead {
+      font-size: 18px; /* Adjust heading size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .aboutPage {
+      padding: 0 10px; /* Further reduce padding for very small screens */
+      margin-top: 20px; /* Smaller margin */
+    }
+  
+    .aboutHead span {
+      font-size: 28px; /* Scale down further for very small screens */
+    }
+  
+    .aboutHead {
+      font-size: 16px; /* Smaller font for headings */
+    }
+  }
+  

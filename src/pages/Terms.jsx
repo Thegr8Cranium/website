@@ -1,20 +1,20 @@
 import React from "react";
+import Termsco from "../components/termsco/Termsco";
 import Header from "../components/header/Header";
-import Hero from "../components/hero/Hero";
 import Footer from "../components/footer/Footer";
-import FAQAccordion from "../components/FAQAccordion/FAQAccordion";
+import Hero from "../components/hero/Hero";
 import CryptoTicker from "../components/CryptoTicker/CryptoTicker";
 
-const Faq = () => {
+const Terms = () => {
   return (
     <>
       <Header />
       <Hero />
       <CryptoTicker />
-      <FAQAccordion />
+      <Termsco />
       <Footer />
     </>
   );
 };
 
-export default Faq;
+export default Terms;

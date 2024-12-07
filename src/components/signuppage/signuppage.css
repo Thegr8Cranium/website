@@ -1,0 +1,109 @@
+.signUpPage {
+    color: grey;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* SignUp Form container */
+.signUpForm {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    text-align: left;
+}
+
+/* Label styling */
+.signUpForm label {
+    text-align: left;
+}
+
+/* Input field styles for text, password, email, and address */
+.signUpForm input[type="text"],
+.signUpForm input[type="password"],
+.signUpForm input[type="email"],
+.signUpForm input[type="address"] {
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+/* Button styling */
+.signUpForm button {
+    display: block;
+    width: 87%;
+    padding: 10px 15px;
+    margin-top: 30px;
+    border: 1px solid #5d8aa8;
+    border-radius: 10px;
+    background-color: #17181f;
+    color: #5d8aa8;
+}
+
+/* Button hover effect */
+.signUpForm button:hover {
+    background-color: #5d8aa8;
+    color: #17181f;
+}
+
+/* Responsive Styles */
+
+/* For Tablets and smaller laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .signUpForm {
+        width: 80vw; /* Increase form width for tablet screens */
+        padding-bottom: 1.5em; /* Reduce bottom padding */
+    }
+
+    .signUpForm input[type="text"],
+    .signUpForm input[type="password"],
+    .signUpForm input[type="email"],
+    .signUpForm input[type="address"] {
+        width: 90%; /* Increase input width */
+    }
+
+    .signUpForm button {
+        width: 90%; /* Increase button width */
+    }
+}
+
+/* For smaller tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .signUpForm {
+        width: 90vw; /* Take more width */
+        padding-bottom: 1.5em;
+    }
+
+    .signUpForm input[type="text"],
+    .signUpForm input[type="password"],
+    .signUpForm input[type="email"],
+    .signUpForm input[type="address"] {
+        width: 95%; /* Full width for input fields */
+    }
+
+    .signUpForm button {
+        width: 95%; /* Full width for button */
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .signUpForm {
+        width: 90%; /* Full width on mobile */
+        padding: 1em 0; /* Add some vertical padding */
+    }
+
+    .signUpForm input[type="text"],
+    .signUpForm input[type="password"],
+    .signUpForm input[type="email"],
+    .signUpForm input[type="address"] {
+        width: 100%; /* Full width for inputs on mobile */
+        padding: 12px 15px; /* Slightly bigger padding for easier touch input */
+    }
+
+    .signUpForm button {
+        width: 100%; /* Full width button on mobile */
+        padding: 15px; /* Adjust padding */
+    }
+}
